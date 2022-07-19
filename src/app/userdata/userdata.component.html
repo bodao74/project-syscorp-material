@@ -1,0 +1,56 @@
+<h2> Dados do Usuário </h2>
+<form [formGroup]="formulario"
+      (ngOnSubmit)="onSalvar()">
+    <div class="container">
+        <mat-form-field appearance="fill">
+            <mat-label>Nome</mat-label>
+            <input matInput
+                   inputmode="text"
+                   placeholder="Nome Completo"
+                   #nameInput
+                   formControlName="nome">
+            <mat-error>
+                Nome é <strong>Obrigatório</strong>
+            </mat-error>
+        </mat-form-field>
+
+    </div>
+    <div class="container">
+        <mat-form-field appearance="fill">
+            <mat-label>Certificado de Registro</mat-label>
+            <input matInput
+                   inputmode="number"
+                   placeholder="CR"
+                   #numCR
+                   formControlName="cr">
+            <mat-error>
+                Número do CR é Obrigatório
+            </mat-error>
+        </mat-form-field>
+    </div>
+    <div class="container">
+        <mat-form-field appearance="fill">
+            <mat-label>Endereço</mat-label>
+            <textarea matInput
+                      inputmode="text"
+                      placeholder="Endereço completo"
+                      #endereco
+                      formControlName="endereco"
+                      min-height="150px">
+            </textarea>
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Validade</mat-label>
+            <input matInput
+                   type="date"
+                   formControlName="validade">
+        </mat-form-field>
+    </div>
+    <button mat-raised-button
+            type="submit"
+            color="primary"
+            (click)="onSalvar()">Salvar
+    </button>
+</form>
