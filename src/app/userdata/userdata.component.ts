@@ -16,8 +16,8 @@ export class UserdataComponent implements OnInit {
     this.formulario = new FormGroup({
       nome: new FormControl(null, Validators.required),
       cr: new FormControl(null, [Validators.required]),
-      endereco: new FormControl(null),
-      validade: new FormControl(null)
+      endereco: new FormControl(null, Validators.required),
+      validade: new FormControl(null, Validators.required)
     });
   }
   onSalvar() {

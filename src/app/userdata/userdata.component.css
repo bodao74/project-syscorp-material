@@ -1,0 +1,8 @@
+mat-form-field {
+    margin-right: 12px;
+    margin-bottom: 24px;
+}
+
+textarea {
+    min-height: 80px;
+}

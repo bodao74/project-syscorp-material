@@ -13,13 +13,10 @@
                 Nome é <strong>Obrigatório</strong>
             </mat-error>
         </mat-form-field>
-
-    </div>
-    <div class="container">
         <mat-form-field appearance="fill">
             <mat-label>Certificado de Registro</mat-label>
             <input matInput
-                   inputmode="number"
+                   type="number"
                    placeholder="CR"
                    #numCR
                    formControlName="cr">
@@ -32,20 +29,26 @@
         <mat-form-field appearance="fill">
             <mat-label>Endereço</mat-label>
             <textarea matInput
-                      inputmode="text"
+                      type="text"
                       placeholder="Endereço completo"
                       #endereco
                       formControlName="endereco"
-                      min-height="150px">
+                      min-height="150px"
+                      width="400px">
             </textarea>
         </mat-form-field>
     </div>
-    <div>
+    <div class="container">
         <mat-form-field appearance="fill">
-            <mat-label>Validade</mat-label>
+            <mat-label>CR Valido até</mat-label>
             <input matInput
-                   type="date"
+                   [matDatepicker]="picker"
                    formControlName="validade">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix
+                                   [for]="picker">
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
     </div>
     <button mat-raised-button
