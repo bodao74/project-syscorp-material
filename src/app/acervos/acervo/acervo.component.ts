@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatAccordion } from '@angular/material/expansion';
 
 @Component({
   selector: 'app-acervo',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./acervo.component.css']
 })
 export class AcervoComponent implements OnInit {
+  @ViewChild(MatAccordion) accordion: MatAccordion;
+  panelOpenState = false;
 
   constructor() { }
 

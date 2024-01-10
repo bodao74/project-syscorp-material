@@ -1,12 +1,4 @@
-.example-spacer {
-    flex: 1 1 auto;
-}
-
-.fixed-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100% !important;
-    ;
+.content {
+    width: auto;
+    margin-block-start: 50px;
 }
