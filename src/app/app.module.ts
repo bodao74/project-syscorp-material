@@ -15,6 +15,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -47,7 +49,8 @@ import { CACService } from './services/cac.service';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatSidenavModule
   ],
   providers: [CACService],
   bootstrap: [AppComponent]

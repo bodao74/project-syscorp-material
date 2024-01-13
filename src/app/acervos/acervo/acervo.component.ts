@@ -1,16 +1,15 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatAccordion } from '@angular/material/expansion';
+import { Component, OnInit } from '@angular/core';
 
-@Component({
+
+@Component( {
   selector: 'app-acervo',
   templateUrl: './acervo.component.html',
-  styleUrls: ['./acervo.component.css']
-})
+  styleUrls: [ './acervo.component.css' ]
+} )
 export class AcervoComponent implements OnInit {
-  @ViewChild(MatAccordion) accordion: MatAccordion;
-  panelOpenState = false;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

@@ -1,15 +1,11 @@
-<div>
-   <mat-toolbar color="primary" role="heading" class="fixed-header">
-      <a mat-button
-         disabled="true">Cidadão</a>
-      <a mat-button
-         disabled="true">Colecionador</a>
-      <a mat-button>Atirador</a>
-      <a mat-button
-         href="https://www.google.com/">Caçador</a>
-      <span class="spacer"> </span>
-      <button mat-icon-button>
-      <mat-icon>add</mat-icon>
-   </button>
-   </mat-toolbar>
-</div>
+<mat-card>
+  <mat-toolbar color="primary" class="zmargin">
+    <span>My Application</span>
+    <a mat-button disabled="false">Cidadão</a>
+    <a mat-button disabled="false">Colecionador</a>
+    <a mat-button>Atirador</a>
+    <a mat-button href="https://www.google.com/">Caçador</a>
+  </mat-toolbar>
+
+  <app-acervo></app-acervo>
+</mat-card>
